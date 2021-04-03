@@ -4,7 +4,7 @@ const db = require('quick.db')
 module.exports.run = async (client, message, args) => {
 
 
- if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send(`You don't have permission to do this command`)
+ if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send(`You don't have permission to do this command`)
 
     
 let cmd = args[0];
