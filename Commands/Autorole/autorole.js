@@ -54,8 +54,8 @@ module.exports.help = {
     name: "autorole",
     aliases: [],
     cooldown: 1,
-    category: "Other",
-    description: "Get Bot Invite Link & Other Info!",
-    usage: "Invite",
-    examples: ["invite"]
+    category: "Autorole",
+    description: "Set autorole,
+    usage: "autorole add @role",
+    examples: ["autorole add @Member"]
 };
