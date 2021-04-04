@@ -74,6 +74,8 @@ Client.on("message", async (message) => {
 
 Client.on('guildMemberAdd', async (member) => {
   let autorole = await db.get(`autorole_${member.guild.id}`)
+  
+  if(!role) return
 
   if(autorole.position >= member.guild.me.roles.highest.position) return
 
